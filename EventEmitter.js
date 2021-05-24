@@ -66,11 +66,11 @@ class EventEmitter {
 }
 
 const event = new EventEmitter ();
-const addTestFn = () => console.log('add-test 事件被触发了')
-event.on('add-test', addTestFn);
-event.emit('add-test');
-event.off('add-test', addTestFn);
-event.emit('add-test');
-event.once('add-test-once', () => console.log('add-test 一次事件被触发了'));
-event.emit('add-test-once');
-event.emit('add-test-once');
+const addTestFn = () => console.log('test 事件被触发了')
+event.on('test', addTestFn);
+event.emit('test');
+event.off('test', addTestFn);
+event.emit('test');
+event.once('test-once', () => console.log('test-once 一次事件被触发了'));
+event.emit('test-once');
+event.emit('test-once');
